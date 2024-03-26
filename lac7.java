@@ -1,9 +1,16 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class lac7 {
     public static void main(String[] args) {
-        int[] arr = {1,3,5,3,7,2};
-        Insertion(arr);
+        Scanner in =  new Scanner(System.in);
+        System.out.println("Enter Your Array Size :");
+        int N = in.nextInt();
+        int[] arr = new int[N];
+        System.out.println("Enter Your Array Value: size("+N+")");
+        for(int i=0;i<N;i++){
+           arr[i] = in.nextInt();  
+        }
     System.err.println(Arrays.toString(arr));
     }
 
